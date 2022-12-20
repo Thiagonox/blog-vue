@@ -9,7 +9,18 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'Souse': ['Source Sans Pro'],
+      'Quicksand': ['Quicksand'],
+    },
+    extend: {
+      colors: {
+        'principal': '#FEFCF6',
+        'esverdeado': '#FEFCF6',
+        'verde':'#FEFCF6',
+        'branco': '#000',
+      },
+    },
   },
   plugins: [],
 }
