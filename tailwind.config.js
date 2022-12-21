@@ -10,14 +10,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'Souse': ['Source Sans Pro'],
-      'Quicksand': ['Quicksand'],
+      'principal': ['Source Sans Pro'],
+      'secundaria': ['Quicksand'],
     },
     extend: {
       colors: {
-        'principal': '#FEFCF6',
-        'esverdeado': '#FEFCF6',
-        'verde':'#FEFCF6',
+        'principal': '#1B1C18',
+        'secundaria':'#E5E3DD',
         'branco': '#000',
       },
     },
