@@ -1,30 +1,39 @@
 <template>
     <div class="bg-principal">
         <header class="m-auto w-11/12 h-16 flex justify-between items-center">
-            <button onclick="menu()" class="w-6 h-6">
-                <div class="border-t-4 mb-1 border-secundario"></div>
-                <div class="border-t-4 mb-1 border-secundario"></div>
-                <div class="border-t-4 mb-1 border-secundario"></div>
+            <button @click="click" class="w-8 h-8">
+                <img class="w-8" src="../assets/img/menu.svg" alt="" srcset="">
             </button>
             <div class="w-max-1/6">
                 <h1 class="font-secundaria text-xl"><mark class="bg-secundaria py-2 px-1">FRAME</mark></h1>
             </div>
-                <nav id="nav" class="hidden">
-                    <ul class="flex-col justify-between font-Quicksand text-xl text-branco">
-                        <li class=""><router-link to="/">HOME</router-link></li>
-                        <li class=""><router-link to="/blog">BLOG</router-link></li>
+                <nav id="nav" class="absolute w-3/4 h-screen bg-[#23261E] p-6 top-0 left-0 duration-00 shadow-2xl shadow-black rounded-xl">
+                    <button @click="click" class="w-8 h-8 ml-4">
+                        <img class="w-8" src="../assets/img/menu_open.svg" alt="" srcset="">
+                     </button>
+                    <ul class="h-32 flex flex-col justify-around font-Quicksand text-xl text-[#fff]">
+                        <li class="pl-4 h-10 rounded-full flex items-center" v-bind:class="{'bg-tertiary': $route.path === '/'}"><router-link class="w-full" to="/">Home</router-link></li>
+                        <li class="pl-4 h-10 rounded-full flex items-center" v-bind:class="{'bg-tertiary': $route.path === '/blog'}"><router-link class="w-full" to="/blog">Blog</router-link></li>
                     </ul>
                 </nav>
-                <div class="w-10 h-10 flex justify-center items-center rounded-full">
+                <button class="w-12 h-12 flex justify-center items-center rounded-full hover:bg-[#292A26] active:bg-[#33342F]">
                     <img class="w-6" src="../assets/img/light_mode.svg" alt="">
-                </div>
+                </button>
         </header>
+        <hr class="border-b-2 border-tertiary">
     </div>
 </template>
 <script>
-  export default {};
-  function menu() {
-    const nav = document.getElementById('nav');
-    nav.classList.add('absolute top-16 left-0 w-11/12 h-32 bg-principal flex justify-center items-center');
-  }
+    export default {
+    data() {
+        return {
+        }
+    },
+    methods: {
+        click() {
+            const nav = document.getElementById('nav')
+            nav.classList.toggle('-translate-x-full')
+        }
+    }
+    }
 </script>
