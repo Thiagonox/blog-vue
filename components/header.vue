@@ -1,19 +1,19 @@
 <template>
     <div class="bg-principal">
         <header class="m-auto w-11/12 h-16 flex justify-between items-center">
-            <button @click="click" class="w-8 h-8">
+            <button @click="click" class="w-8 h-8 md:hidden">
                 <img class="w-8" src="../assets/img/menu.svg" alt="" srcset="">
             </button>
             <div class="w-max-1/6">
                 <h1 class="font-secundaria text-xl"><mark class="bg-secundaria py-2 px-1">FRAME</mark></h1>
             </div>
-                <nav id="nav" class="absolute w-3/4 h-screen bg-[#23261E] p-6 top-0 left-0 duration-00 shadow-2xl shadow-black rounded-xl">
-                    <button @click="click" class="w-8 h-8 ml-4">
+                <nav id="nav" class="absolute md:flex items-center md:static w-3/4 h-screen md:w-72 md:max-h-16 bg-[#23261E] md:bg-inherit p-6 top-0 left-0 duration-200 shadow-2xl shadow-black md:shadow-none rounded-xl z-10 md:z-0">
+                    <button @click="click" class="w-8 h-8 ml-4 md:hidden">
                         <img class="w-8" src="../assets/img/menu_open.svg" alt="" srcset="">
                      </button>
-                    <ul class="h-32 flex flex-col justify-around font-Quicksand text-xl text-[#fff]">
-                        <li class="pl-4 h-10 rounded-full flex items-center" v-bind:class="{'bg-tertiary': $route.path === '/'}"><router-link class="w-full" to="/">Home</router-link></li>
-                        <li class="pl-4 h-10 rounded-full flex items-center" v-bind:class="{'bg-tertiary': $route.path === '/blog'}"><router-link class="w-full" to="/blog">Blog</router-link></li>
+                    <ul class="h-24 md:h-max mt-6 md:m-0 flex flex-col md:flex-row justify-between font-Quicksand text-xl md:text-base text-[#DDE6CD]">
+                        <li class="px-4 h-10 rounded-full flex items-center" v-bind:class="{'bg-tertiary': $route.path === '/'}"><img class="w-6 mr-2" src="../assets/img/home.svg" alt="" srcset=""><router-link class="w-full" to="/">Home</router-link></li>
+                        <li class="px-4 h-10 rounded-full flex items-center" v-bind:class="{'bg-tertiary': $route.path === '/blog'}"><img class="w-6 mr-2" src="../assets/img/pages.svg" alt="" srcset=""><router-link class="w-full" to="/blog">Blog</router-link></li>
                     </ul>
                 </nav>
                 <button class="w-12 h-12 flex justify-center items-center rounded-full hover:bg-[#292A26] active:bg-[#33342F]">
@@ -33,6 +33,7 @@
         click() {
             const nav = document.getElementById('nav')
             nav.classList.toggle('-translate-x-full')
+            nav.classList.toggle('shadow-none')
         }
     }
     }
