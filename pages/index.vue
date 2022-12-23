@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-principal">
+    <div class="bg-principal pb-6">
         <header></header>
         <main class="">
             <div class="w-full m-auto pt-4 px-2">
