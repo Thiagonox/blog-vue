@@ -1,6 +1,5 @@
 <template>
     <div class="bg-principal pb-6">
-        <meta name="google-site-verification" content="ew2971jEd2d1Y5ee1xORYl5a-rXX-ZqVxKLfZMvt59Q" />
         <header></header>
         <main class="">
             <div class="w-full m-auto pt-4 px-2">
