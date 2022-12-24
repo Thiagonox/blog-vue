@@ -12,12 +12,33 @@
                 <h2 class="ml-6 text-text text-5xl font-principal">
                     Artigos
                 </h2>
-                <div class="">
+                <div id="artigos" class="">
                     <Article></Article>
                     <Article></Article>
                     <Article></Article>
+                    <button class="w-10 h-10 bg-white" @click="created"></button>
+                    <p>{{ titulos }}</p>
                 </div>
             </div>
         </main>
     </div>
 </template>
+<script>
+import axios from 'axios'
+
+export default {
+  data() {
+    return {
+      titulos: ""
+    }
+  },
+  methods: {
+    created() {
+  axios.get('https://xkzindqijuvrqfqhtfdy.supabase.co/rest/v1/Artigo?select=titulo')
+    .then(response => {
+      this.titulos = response.data
+    })
+}
+  }
+}
+</script>
