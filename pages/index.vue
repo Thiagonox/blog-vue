@@ -27,9 +27,22 @@ import axios from 'axios'
 export default {
   data() {
     return {
+        title: 'Home page',
       titulos: ""
     }
   },
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Home page description'
+          }
+        ]
+      }
+    },
   methods: {
     created() {
   axios.get('https://xkzindqijuvrqfqhtfdy.supabase.co/rest/v1/Artigo?select=titulo')
