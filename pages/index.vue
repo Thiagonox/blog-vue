@@ -36,8 +36,6 @@ export default {
         title: this.title,
         meta: [
           {
-            name2: "google-site-verification",
-            content: "ew2971jEd2d1Y5ee1xOR",
             hid: 'description',
             name: 'description',
             content: 'Home page description'
