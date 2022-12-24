@@ -16,6 +16,7 @@
   "dependencies": {
     "axios": "^1.2.1",
     "tailwind-scrollbar-hide": "^1.1.7",
+    "vue-gtag-next": "^1.14.0",
     "vue-router": "^4.1.6"
   }
 }
