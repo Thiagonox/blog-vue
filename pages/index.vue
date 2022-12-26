@@ -3,7 +3,7 @@
         <header></header>
         <main class="">
             <div class="w-full m-auto pt-4 px-2">
-                <h1 class="lg:w-2/3 absolute ml-6 mt-6 text-text text-5xl md:text-7xl font-principal">
+                <h1 class="lg:w-1/2 absolute ml-6 mt-6 text-text text-5xl font-principal">
                     Um blog para quem gosta de plantas e decoração
                 </h1>
                 <img class="w-full md:h-60 md:object-cover rounded-3xl" src="https://photo-cdn2.icons8.com/_yZJWIh2uk3UDtFzvPrapRNHPJxnI8PBXwCVVHm2Pu8/rs:fit:1608:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi83YjExYzc0MGYz/MWY0NzgwOTdjNGY0/Nzc0NmU0YWI4MC5q/cGc.jpg" alt="">
@@ -12,7 +12,7 @@
                 <h2 class="mt-6 text-text text-5xl font-principal">
                     Artigos
                 </h2>
-                <div class="w-full mt-6 md:grid md:grid-cols-4">
+                <div class="w-full mt-6 grid md:grid-cols-4">
                     <div id="sobre" class="col-span-3">
                         <Article v-for="artigo in listaArtigo.slice(0, 3)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo"/>
                     </div>
