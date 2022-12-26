@@ -13,7 +13,7 @@
                     Artigos
                 </h2>
                 <div id="artigos" class="">
-                    <Article  titulo="titulo"/>
+                    <Article v-for="artigo in listaArtigo" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo"/>
                 </div>
             </div>
         </main>
@@ -31,7 +31,6 @@ export default {
     return {
         title: 'Home page',
         listaArtigo: [],
-      titulo: "",
     }
     
   },
@@ -47,8 +46,6 @@ export default {
         ]
       }
     },
-  methods: {
-
     created() {
       axios.interceptors.request.use(function (config) {
           config.headers['apikey'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhremluZHFpanV2cnFmcWh0ZmR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAxNjE3NzQsImV4cCI6MTk4NTczNzc3NH0.Pmr3Q3-bA26YyddjqkD0gG9w4laU9YJCYjSrUoEv03Q';
@@ -60,7 +57,9 @@ export default {
   .then((res) => {
     this.listaArtigo = res.data
   })
-}
+},
+  methods: {
+    
   }
 }
 </script>
