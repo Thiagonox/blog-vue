@@ -13,23 +13,27 @@
                     Artigos
                 </h2>
                 <div id="artigos" class="">
-                    <Article></Article>
-                    <Article></Article>
-                    <Article></Article>
+                    <Article  titulo="titulo"/>
                 </div>
             </div>
         </main>
     </div>
 </template>
 <script>
+
+import Article from '../components/article.vue'
+
 import axios from 'axios'
 
 export default {
+  
   data() {
     return {
         title: 'Home page',
-      titulos: ""
+        listaArtigo: [],
+      titulo: "",
     }
+    
   },
   head() {
       return {
@@ -44,11 +48,18 @@ export default {
       }
     },
   methods: {
+
     created() {
-  axios.get('https://xkzindqijuvrqfqhtfdy.supabase.co/rest/v1/Artigo?select=titulo')
-    .then(response => {
-      this.titulos = response.data
-    })
+      axios.interceptors.request.use(function (config) {
+          config.headers['apikey'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhremluZHFpanV2cnFmcWh0ZmR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAxNjE3NzQsImV4cCI6MTk4NTczNzc3NH0.Pmr3Q3-bA26YyddjqkD0gG9w4laU9YJCYjSrUoEv03Q';
+          config.headers['Authorization'] = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhremluZHFpanV2cnFmcWh0ZmR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAxNjE3NzQsImV4cCI6MTk4NTczNzc3NH0.Pmr3Q3-bA26YyddjqkD0gG9w4laU9YJCYjSrUoEv03Q';
+          return config;
+        });
+
+      axios.get("https://xkzindqijuvrqfqhtfdy.supabase.co/rest/v1/Artigo")
+  .then((res) => {
+    this.listaArtigo = res.data
+  })
 }
   }
 }

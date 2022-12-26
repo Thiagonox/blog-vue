@@ -20,6 +20,9 @@
             <p class="text-text text-xl font-principal mb-6">As plantas de jardim são uma excelente maneira de adicionar cor e beleza ao seu ambiente. Considere combinar plantas de diferentes tamanhos e cores para criar um visual atraente. Você também pode adicionar elementos decorativos, como bancos, fontes ou esculturas, para dar personalidade ao seu jardim.</p>
             <h2 class="text-text text-2xl font-secundaria mb-6"><b>Aproveite o seu jardim</b></h2>
             <p class="text-text text-xl font-principal">Não deixe que o seu jardim se torne apenas um lugar para olhar. Aproveite o espaço para relaxar, ler um livro ou fazer um piquenique. Adicione mobiliário de jardim confortável e aproveite o ar fresco e a natureza ao seu redor.</p>
+            <section>
+                <Article></Article>
+            </section>
         </main>
     </div>
 </template>

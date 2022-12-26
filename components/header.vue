@@ -5,9 +5,9 @@
                 <img class="w-8" src="../assets/img/menu.svg" alt="" srcset="">
             </button>
             <div class="w-max-1/6">
-                <h1 class="font-secundaria text-xl"><mark class="bg-[#E5E3DD] py-2 px-1">FRAME</mark></h1>
+                <h1 class="font-secundaria text-base"><mark class="bg-[#E5E3DD] py-2 px-1">FRAME</mark></h1>
             </div>
-                <nav id="nav" class="absolute md:flex items-center md:static w-3/4 h-screen md:w-72 md:max-h-16 bg-[#23261E] md:bg-inherit p-6 top-0 left-0 duration-200 shadow-2xl shadow-black md:shadow-none rounded-xl z-10 md:z-0">
+                <nav id="nav" class="absolute -translate-x-full md:translate-x-0 md:flex items-center md:static w-3/4 h-screen md:w-72 md:h-16 bg-[#23261E] md:bg-inherit p-6 top-0 left-0 duration-200  shadow-black md:shadow-none rounded-xl z-10 md:z-0">
                     <button @click="click" class="w-8 h-8 ml-4 md:hidden">
                         <img class="w-8" src="../assets/img/menu_open.svg" alt="" srcset="">
                      </button>
@@ -33,7 +33,7 @@
         click() {
             const nav = document.getElementById('nav')
             nav.classList.toggle('-translate-x-full')
-            nav.classList.toggle('shadow-none')
+            nav.classList.toggle('shadow-2xl')
         }
     }
     }
