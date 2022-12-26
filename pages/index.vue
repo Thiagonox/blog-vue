@@ -3,17 +3,20 @@
         <header></header>
         <main class="">
             <div class="w-full m-auto pt-4 px-2">
-                <h1 class="md:w-1/2 absolute ml-6 mt-6 text-text text-5xl font-principal">
+                <h1 class="lg:w-1/2 absolute ml-6 mt-6 text-text text-5xl font-principal">
                     Um blog para quem gosta de plantas e decoração
                 </h1>
                 <img class="w-full md:h-60 md:object-cover rounded-3xl" src="https://photo-cdn2.icons8.com/_yZJWIh2uk3UDtFzvPrapRNHPJxnI8PBXwCVVHm2Pu8/rs:fit:1608:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi83YjExYzc0MGYz/MWY0NzgwOTdjNGY0/Nzc0NmU0YWI4MC5q/cGc.jpg" alt="">
             </div>
-            <div class="w-11/12 mx-auto mt-6">
-                <h2 class="ml-6 text-text text-5xl font-principal">
+            <div class="w-11/12 mx-auto">
+                <h2 class="mt-6 text-text text-5xl font-principal">
                     Artigos
                 </h2>
-                <div id="artigos" class="">
-                    <Article v-for="artigo in listaArtigo.slice(0, 4)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" limitationList/>
+                <div class="w-full mt-6 grid md:grid-cols-4">
+                    <div id="sobre" class="col-span-3">
+                        <Article v-for="artigo in listaArtigo.slice(0, 3)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo"/>
+                    </div>
+                    <Section class="row-span-full col-start-4"/> 
                 </div>
             </div>
         </main>
@@ -31,7 +34,6 @@ export default {
     return {
         title: 'Home page',
         listaArtigo: [],
-        limitationList:3
     }
     
   },
@@ -59,8 +61,7 @@ export default {
     this.listaArtigo = res.data
   })
 },
-  methods: {
-    
-  }
 }
+async function oi(){src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5673700186739436"
+     crossorigin="anonymous"}
 </script>
