@@ -13,7 +13,7 @@
                     Artigos
                 </h2>
                 <div id="artigos" class="">
-                    <Article v-for="artigo in listaArtigo" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo"/>
+                    <Article v-for="artigo in listaArtigo.slice(0, 4)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" limitationList/>
                 </div>
             </div>
         </main>
@@ -31,6 +31,7 @@ export default {
     return {
         title: 'Home page',
         listaArtigo: [],
+        limitationList:3
     }
     
   },
