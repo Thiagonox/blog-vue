@@ -17,11 +17,11 @@
                 <h2 class="mt-6 text-text text-5xl font-principal">
                     Artigos
                 </h2>
-                <div class="w-full mt-6 grid md:grid-cols-4 gap-4">
-                    <div id="sobre" class="col-span-2">
+                <div class=" mt-6 grid md:grid-cols-4 gap-4">
+                    <div class="md:col-span-2">
                         <Article v-for="artigo in listaArtigo.slice(0, 2)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo"/>
                     </div>
-                    <div id="sobre" class="col-span-2">
+                    <div class="hidden md:block md:col-span-2">
                         <Article v-for="artigo in listaArtigo.slice(2, 4)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo"/>
                     </div>
                 </div>
