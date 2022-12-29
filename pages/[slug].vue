@@ -24,12 +24,12 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
+
 export default {
-  props: {
-    titulo: String,
-    tag: String,
-    resumo: String,
-    artigo: String
+  async asyncData({ params }) {
+    const { data } = await axios.get(`/api/posts/${params.id}`)
+    return { post: data }
   }
 }
 </script>
