@@ -16,7 +16,7 @@
                         <li class="px-4 h-10 rounded-full flex items-center" v-bind:class="{'bg-[#324F10]': $route.path === '/blog'}"><img class="w-6 mr-2" src="../assets/img/pages.svg" alt="" srcset=""><router-link class="w-full" to="/blog">Blog</router-link></li>
                     </ul>
                 </nav>
-                <button class="w-12 h-12 flex justify-center items-center rounded-full hover:bg-[#292A26] active:bg-[#33342F]">
+                <button class="md:hidden w-12 h-12 flex justify-center items-center rounded-full hover:bg-[#292A26] active:bg-[#33342F]">
                     <img class="w-6" src="../assets/img/light_mode.svg" alt="">
                 </button>
         </header>
