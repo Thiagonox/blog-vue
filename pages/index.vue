@@ -5,7 +5,7 @@
             <div class="w-full m-auto pt-4 px-2">
               <div class="lg:w-2/3 absolute ml-10 mt-6 text-text font-principal">
                 <h1 class="text-6xl md:text-8xl">
-                    Dicas de jardinagem
+                    Jardinagem
                 </h1>
                 <h2 class="text-2xl md:text-xl">
                     Jardinagem
@@ -69,6 +69,4 @@ export default {
   })
 },
 }
-async function oi(){src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5673700186739436"
-     crossorigin="anonymous"}
 </script>
