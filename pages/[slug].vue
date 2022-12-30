@@ -2,7 +2,7 @@
     <div class="bg-principal pt-6">
         <main class="w-11/12 m-auto pb-6">
             <div class="w-full m-auto mb-10">
-                <img class="w-full rounded-3xl" src="https://photo-cdn2.icons8.com/0dh5qMhiZOUyICiSo6i_ZZ9zjKsqIsl0QvfSGUp7tN4/rs:fit:1608:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi8xNDY4ZDQyNDBh/YjM0MmUzODNjY2M0/ZTI0YzkxNTg1Mi5q/cGc.jpg" alt="">
+                <img class="w-full md:h-60 md:object-cover rounded-3xl" src="https://photo-cdn2.icons8.com/0dh5qMhiZOUyICiSo6i_ZZ9zjKsqIsl0QvfSGUp7tN4/rs:fit:1608:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi8xNDY4ZDQyNDBh/YjM0MmUzODNjY2M0/ZTI0YzkxNTg1Mi5q/cGc.jpg" alt="">
                 
                 <h1 class="-mt-20 text-5xl font-principal">
                     <mark class="bg-text">
@@ -24,12 +24,14 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
-
 export default {
+  data() {
+    return {
+      titulo: '',
+      conteudo: ''
+    }
+  },
   async asyncData({ params }) {
-    const { data } = await axios.get(`/api/posts/${params.id}`)
-    return { post: data }
   }
 }
 </script>
