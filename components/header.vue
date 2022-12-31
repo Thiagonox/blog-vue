@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-principal">
+    <div class="bg-principal md:hidden">
         <header class="m-auto w-11/12 h-16 flex justify-between items-center">
             <button @click="click" class="w-8 h-8 md:hidden">
                 <img class="w-8" src="../assets/img/menu.svg" alt="" srcset="">
