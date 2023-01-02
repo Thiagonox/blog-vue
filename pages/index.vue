@@ -19,7 +19,9 @@
                   Categorias
                 </h2>
               </div>
-              <Categories> </Categories>
+              <div class="snap-y snap-mandatory overflow-scroll scrollbar-hide w-full flex">
+                <Categories v-for="artigo in listaArtigo.slice(0, 10)"/>
+              </div>
             </div>
             <div class="w-11/12 mx-auto">
                 <h2 class="mt-6 text-text text-5xl font-principal">
