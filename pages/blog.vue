@@ -7,7 +7,7 @@
             <div class="snap-y snap-mandatory overflow-scroll scrollbar-hide w-full h-10 flex my-4">
                 <Chip v-for="artigo in listaArtigo.slice(0, 10)" :chip="artigo.tag"/>
             </div>
-            <div class=" mt-6 grid md:grid-cols-4 gap-4">
+            <div class="w-full mt-6 grid md:grid-cols-4 gap-4">
                     <div class="md:col-span-2">
                         <Article v-for="artigo in listaArtigo.slice(0, 2)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
                     </div>
