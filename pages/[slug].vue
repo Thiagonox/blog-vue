@@ -10,8 +10,13 @@
                     </mark>
                 </h1>
             </div>
-            <h2 class="text-text/50 text-lg font-secundaria mb-6">{{ post.tag }}</h2>
-            <h2 class="text-text text-2xl font-secundaria mb-6"><b>Escolha as plantas certas para o seu jardim</b></h2>
+            <div class="mb-6 flex">
+              <h2  v-for="tag in post.tag" class="text-text/50 text-lg font-secundaria ml-4">{{ tag }}</h2>
+            </div>
+            <h2 class="text-text text-2xl font-secundaria mb-6"><b>{{ post.resumo }}</b></h2>
+
+            
+            <h2 class="text-text text-2xl font-secundaria mb-6"><b>{{ post.resumo }}</b></h2>
             <p class="text-text text-xl font-principal mb-6">Antes de comprar qualquer planta, é importante considerar o clima e o solo em que ela será plantada. Algumas plantas só prosperam em áreas ensolaradas, enquanto outras preferem sombra. Também é importante considerar o tamanho e a forma que a planta terá no jardim, bem como sua necessidade de cuidados.</p>
             
         </main>
