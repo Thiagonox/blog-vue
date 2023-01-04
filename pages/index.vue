@@ -7,8 +7,8 @@
                 <h1 class="text-6xl md:text-8xl">
                     Jardinagem
                 </h1>
-                <h2 class="text-2xl md:text-xl">
-                    Jardinagem
+                <h2 class="text-2xl md:text-xl mt-2">
+                    Dicas para cultivar um jardim saudável e florido
                 </h2>
               </div>
               <img class="w-full md:h-60 md:object-cover rounded-3xl" src="https://photo-cdn2.icons8.com/_yZJWIh2uk3UDtFzvPrapRNHPJxnI8PBXwCVVHm2Pu8/rs:fit:1608:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi83YjExYzc0MGYz/MWY0NzgwOTdjNGY0/Nzc0NmU0YWI4MC5q/cGc.jpg" alt="">
@@ -58,15 +58,10 @@ export default {
       }
     },
     created() {
-      axios.interceptors.request.use(function (config) {
-          config.headers['apikey'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhremluZHFpanV2cnFmcWh0ZmR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAxNjE3NzQsImV4cCI6MTk4NTczNzc3NH0.Pmr3Q3-bA26YyddjqkD0gG9w4laU9YJCYjSrUoEv03Q';
-          config.headers['Authorization'] = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhremluZHFpanV2cnFmcWh0ZmR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAxNjE3NzQsImV4cCI6MTk4NTczNzc3NH0.Pmr3Q3-bA26YyddjqkD0gG9w4laU9YJCYjSrUoEv03Q';
-          return config;
-        });
 
-      axios.get("https://xkzindqijuvrqfqhtfdy.supabase.co/rest/v1/Artigo")
+      axios.get("https://d0xguy57.directus.app/items/Post")
   .then((res) => {
-    this.listaArtigo = res.data
+    this.listaArtigo = res.data.data
   })
 },
 }
