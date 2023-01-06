@@ -5,7 +5,7 @@
               Artigos
             </h1>
             <div class="snap-y snap-mandatory overflow-scroll scrollbar-hide w-full h-10 flex my-4">
-                <Chip v-for="artigo in listaArtigo.slice(0, 10)" :chip="artigo.tag"/>
+                <Chip v-for=" artigo in listaArtigo.slice(0, 10)" :chip="artigo.tag"/>
             </div>
             <div class="w-full mt-6 grid md:grid-cols-4 gap-4">
                     <div class="md:col-span-2">

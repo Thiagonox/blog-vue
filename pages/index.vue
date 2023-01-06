@@ -18,7 +18,7 @@
                 <h2 class="mt-6 text-text text-5xl font-principal">
                     Artigos
                 </h2>
-                <div class="w-full mt-6 grid md:grid-cols-4 gap-4">
+                <div class="mt-6 md:grid md:grid-cols-4 md:gap-4">
                     <div class="md:col-span-2">
                         <Article v-for="artigo in listaArtigo.slice(0, 2)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
                     </div>
