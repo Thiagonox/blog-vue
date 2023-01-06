@@ -9,10 +9,10 @@
             </div>
             <div class="w-full mt-6 grid md:grid-cols-4 gap-4">
                     <div class="md:col-span-2">
-                        <Article v-for="artigo in listaArtigo.slice(0, 2)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
+                        <Article v-for="artigo in listaArtigo.slice(0, 5)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
                     </div>
                     <div class="hidden md:block md:col-span-2">
-                        <Article v-for="artigo in listaArtigo.slice(2, 4)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
+                        <Article v-for="artigo in listaArtigo.slice(2, 5)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
                     </div>
             </div>
         </main>
