@@ -10,9 +10,7 @@
                     </mark>
                 </h1>
             </div>
-            <div class="mb-6 flex">
-              <h2  v-for="tag in post.tag" class="text-text/50 text-lg font-secundaria ml-4">{{ tag }}</h2>
-            </div>
+            <h2 class="text-text/50 text-lg font-secundaria ml-4">{{ post.tag }}</h2>
             <div class="md:w-3/5">
               <h2 class="text-text text-xl font-secundaria mb-6"><b>{{ post.resumo }}</b></h2>
               <p class=" text-text text-xl leading-7 font-principal mb-6">{{ post.conteudo1 }}</p>
