@@ -2,12 +2,12 @@
     <div class="bg-principal pb-6">
         <header></header>
         <main class="">
-            <div class="w-full m-auto pt-4 px-2">
+            <div class="w-full m-auto pt-2 px-2">
               <div class="lg:w-2/3 absolute ml-10 mt-6 text-text font-principal">
-                <h1 class="text-6xl md:text-8xl">
+                <h1 class="text-6xl md:text-9xl">
                     Jardinagem
                 </h1>
-                <h2 class="text-2xl md:text-xl mt-2">
+                <h2 class="text-2xl md:text-3xl mt-2">
                     Dicas para cultivar um jardim saudável e florido
                 </h2>
               </div>
