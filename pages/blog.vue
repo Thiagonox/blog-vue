@@ -5,14 +5,14 @@
               Artigos
             </h1>
             <div class="snap-y snap-mandatory overflow-scroll scrollbar-hide w-full h-10 flex my-4">
-                <Chip v-for=" artigo in listaArtigo.slice(0, 10)" :chip="artigo.tag"/>
+                <Chip v-for=" artigo in listaArtigo.slice(0, 7)" :chip="artigo.tag"/>
             </div>
             <div class="w-full mt-6 md:grid md:grid-cols-8 md:gap-8">
               <div class="md:col-span-3">
-                  <Article v-for="artigo in listaArtigo.slice(0, 5)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
+                  <Article v-for="artigo in listaArtigo.slice(0, 4)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
               </div>
               <div class="hidden md:block md:col-span-3">
-                  <Article v-for="artigo in listaArtigo.slice(5, 10)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
+                  <Article v-for="artigo in listaArtigo.slice(4, 10)" :titulo="artigo.titulo" :tag="artigo.tag" :resumo="artigo.resumo" :link="artigo.id.toString()"/>
               </div>
               <div class="h-full mt-3 rounded-2xl bg-[#23261E] hidden md:block md:col-span-2">
                   
