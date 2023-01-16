@@ -15,7 +15,7 @@
                     </router-link>
                 </li>
             </ul>
-            <button class="mx-auto w-12 h-12 border border-white/40 rounded-full hover:bg-tertiary active:bg-[#33342F]">
+            <button class="mx-auto w-12 h-12 border border-white/20 mb-4 rounded-full hover:bg-tertiary active:bg-[#33342F]">
                     <img class="w-6 m-auto" src="../assets/img/light_mode.svg" alt="">
             </button>
         </nav>
