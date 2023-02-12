@@ -7,7 +7,8 @@ O projeto de blog conta com as seguintes funcionalidades:
 * Listagem de posts publicados
 * Leitura de posts individuais
 * Comentários em posts
-## As seguintes tecnologias estão sendo utilizadas no projeto:
+
+As seguintes tecnologias estão sendo utilizadas no projeto:
 
 * Vue.js
 * Nuxt
