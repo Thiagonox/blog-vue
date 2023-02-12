@@ -23,5 +23,5 @@ Execute o projeto com o comando npm run dev
 Pronto! Agora você já pode acessar a aplicação em seu navegador através do endereço http://localhost:3000.
 
 ## Limitações
-O projeto ainda está em fase de desenvolvimento e pode apresentar bugs e comportamentos inesperados.
-Nem todas as funcionalidades descritas acima podem estar disponíveis no momento, já que o projeto está em constante desenvolvimento.
+* O projeto ainda está em fase de desenvolvimento e pode apresentar bugs e comportamentos inesperados.
+* Nem todas as funcionalidades descritas acima podem estar disponíveis no momento, já que o projeto está em constante desenvolvimento.
